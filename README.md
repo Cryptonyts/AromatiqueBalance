@@ -20,4 +20,4 @@ User-Friendly Interface: The app offers a clean and simple interface, making it 
 - [Joysa Kaushik](https://github.com/aapJoysakoi)
 - [Nishita Singh](https://github.com/Nishita10)
 - [Satyam Kumar Prasad](https://github.com/Saty70)
--
+- [Kushagra Singh](https://github.com/kushagra-singhh)
