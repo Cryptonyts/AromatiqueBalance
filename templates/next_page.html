@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App - Next Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(/static/home.png);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+            background-color: white;
+            opacity: 0.9;
+            padding: 10px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: black;
+            padding-right: 10px;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 50px; /* Adjust the width of your logo as needed */
+            height: auto; /* To maintain the aspect ratio */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+            margin-left: 2%;
+            padding: 10px;
+            color: #fff;
+            font-size: 1.8rem;
+
+        }
+
+        main{
+            padding: 4%;
+            height: 100vh;
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+
+        .content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+            background-color: #050000;
+            color: #f8f5f5;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="/static/aroma.png" alt="Logo" class="logo">
+        </div>
+        <div>
+            <a href="/">Home</a>
+            <a href="https://github.com/Cryptonyts" target="_blank">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <h1>Recommended essential oils </h1>
+            <ul>
+                {% for option in selected_options %}
+                    <li>{{ option }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+    <div class="container">
+        <h2>IDEATION, DESIGNED AND CRAFTED BY-</h2>
+        <p>Kushagra Singh <a href="https://github.com/kushagra-singhh" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a> &nbsp  
+            Joysa Kaushik <a href="https://github.com/aapJoysakoi" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a> &nbsp 
+            Nishita Singh <a href="https://github.com/Nishita10" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a>   &nbsp 
+            Satyam Kumar Prasad <a href="https://github.com/Saty70" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a></p>
+    </div>
+</body>
+</html>

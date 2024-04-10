@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromatherapy Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-image {
+            background-image: url('/static/iStock-1185570468-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            z-index: 1;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        .parallax-layer {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .parallax-layer-1 {
+            background-image: url('/static/parallax-layer-1.jpg');
+            justify-content: flex-end;
+        }
+
+        .parallax-layer-2 {
+            background-image: url('/static/parallax-layer-2.jpg');
+            justify-content: flex-start;
+        }
+
+        .parallax-layer-3 {
+            background-image: url('/static/aromatherapy-background.jpg');
+            justify-content: flex-end;
+        }
+
+        button{
+            outline: 0;
+            background-color: transparent;
+            border : solid white 3px;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: white;
+            box-shadow: 0px 0px 10px rgb(198, 190, 237) inset;
+            padding: 10px;
+            transition: ease-in-out 0.3s;
+        }
+        .but2{
+            outline: 0;
+            background-color: transparent;
+            border : solid rgb(218, 6, 197) 3px;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 10px rgb(246, 105, 232) inset;
+            padding: 10px;
+            transition: ease-in-out 0.3s;
+        }
+
+        button:hover {
+            background-color: darkgray;
+            scale: 1.1;
+            transition: ease-in-out 0.3s;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .parallax-text {
+            width: 40%;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .parallax-text h2,
+        .parallax-text p {
+            margin: 0;
+        }
+        .increased-line-height {
+            line-height: 1.75; 
+        }
+
+        nav {
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+            background-color: white;
+            opacity: 0.9;
+            padding: 10px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: black;
+            padding-right: 10px;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 50px; /* Adjust the width of your logo as needed */
+            height: auto; /* To maintain the aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="/static/aroma.png" alt="Logo" class="logo">
+        </div>
+        <div>
+            <a href="/">Home</a>
+            <a href="https://github.com/Cryptonyts" target="_blank">Contact</a>
+        </div>
+    </nav>
+    <div class="hero-image">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 style="font-size:2.7rem"> AROMATIQUE BALANCE </h1>
+            <p style="font-size:1.2rem"><i> a 'treat'ment your senses funtively crave!</i></p>
+            <form action="{{ url_for('second_page') }}" method="get">
+                <button type="submit">Start now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="parallax-layer parallax-layer-1">
+        <div class="parallax-text">
+            <h2>WHAT's AROMA THERAPY? </h2> <BR><BR>
+            <p class="increased-line-height">Aromatherapy is a holistic healing treatment that utilizes natural plant extracts, known as essential oils, to promote physical, mental, and emotional well-being. These essential oils are extracted from various parts of plants, such as leaves, flowers, stems, roots, or bark, and are believed to have therapeutic properties. Aromatherapy is often used in conjunction with massage or inhalation techniques to enhance relaxation, reduce stress, alleviate pain, improve mood, and support overall health and wellness. It can be applied through methods like diffusers, topical application, or inhalation, and is commonly used in spa settings, wellness practices, and home environments.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>it's NOT okay to be not okay! we're here to help.</h2>
+        <p>smell better, Feel better.</p>
+    </div>
+
+    <div class="parallax-layer parallax-layer-2">
+        <div class="parallax-text">
+            <h2>HOW AROMA THERAPY WORKS?</h2><BR><BR>
+            <p class="increased-line-height">Aromatherapy works by utilizing the natural scents of essential oils derived from plants. When these oils are inhaled or applied to the skin, they stimulate the olfactory system (sense of smell) and can have various physiological and psychological effects on the body and mind. The aromatic molecules of the essential oils interact with the limbic system, which is responsible for emotions, memory, and other functions. This interaction can lead to relaxation, stress reduction, mood enhancement, pain relief, and other therapeutic benefits. Additionally, when essential oils are applied to the skin, they can be absorbed into the bloodstream and exert systemic effects throughout the body. Overall, <i> aromatherapy promotes holistic well-being by harnessing the therapeutic properties of natural plant extracts.</i></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Benefits of Aromatherapy</h2>
+        <p> including stress relief, improved sleep, and enhanced mood.</p>
+    </div>
+
+    <div class="parallax-layer parallax-layer-3">
+        <div class="parallax-text">
+            <h2>ACCESSIBILITY.</h2>
+            <br>
+            <p class="increased-line-height">Aromatherapy is generally accessible through essential oils available at local stores or online. Self-administration methods, like diffusers or adding oils to bathwater, make it convenient. Affordability varies based on the cost of oils, but starting with basic oils and DIY methods can help manage expenses. It's crucial to research and purchase high-quality oils. <I>Professional treatments may be more expensive but offer personalized care. Considerations include potential sensitivities and safety precautions.</I></p>
+            <br><br>
+            <form action="{{ url_for('second_page') }}" method="get">
+                <button class='but2' type="submit">Proceed</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>IDEATION, DESIGNED AND CRAFTED BY-</h2>
+        <p>Kushagra Singh <a href="https://github.com/kushagra-singhh" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a> &nbsp  
+            Joysa Kaushik <a href="https://github.com/aapJoysakoi" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a> &nbsp 
+            Nishita Singh <a href="https://github.com/Nishita10" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a>   &nbsp 
+            Satyam Kumar Prasad <a href="https://github.com/Saty70" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a></p>
+    </div>
+</body>
+
+</html>

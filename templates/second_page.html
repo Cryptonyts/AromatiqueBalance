@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromatherapy Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-image {
+            background-image: url('/static/KNOW.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(17, 2, 2, 0.5);
+        }
+
+        .hero-content {
+            z-index: 1;
+            text-align: center;
+            color: #eef2f7;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+            background-color: #050000;
+            color: #f8f5f5;
+        }
+
+        .parallax-layer {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .parallax-text {
+            position: relative;
+            width: 90%;
+            padding: 20px;
+            text-align: right;
+            color: #eef2f7;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: right;
+        }
+
+        .points{
+            text-align: left;
+            width: 30%;
+            position: relative;
+            top: 0%;
+            left: 70%;
+        }
+
+        .parallax-text h1 {
+            width: 90%;
+            padding: 0px;
+            margin-bottom: 2rem;
+            text-align: left;
+            color: #eef2f7;
+        }
+
+        .phead {
+            width: 50%;
+            padding: 0px;
+            margin-bottom: 2rem;
+            text-align: left;
+            color: #eef2f7;
+            position: relative;
+            left: 50%;
+        }
+
+        .parallax-layer-1 {
+            background-image: url('/static/joysa.jpeg');
+        }
+
+        .parallax-layer-2 {
+            background-image: url('/static/sadnes.jpeg');
+        }
+
+        .parallax-layer-3 {
+            background-image: url('/static/fearr.jpeg');
+        }
+
+        .parallax-layer-4 {
+            background-image: url('/static/disguist.jpg');
+        }
+
+        .parallax-layer-5 {
+            background-image: url('/static/anger.jpg');
+        }
+
+        .parallax-layer-6 {
+            background-image: url('/static/home.png');
+            display:flex ;
+            flex-direction: column;
+            justify-content: center;
+            align-self: right;
+            height: 80vh;
+        }
+
+        .form{
+            width:90%;
+            text-align: left;
+            color: #eef2f7;
+            font-size:1.2rem;
+        }
+
+        button{
+            outline: 0;
+            background-color: transparent;
+            border: solid white 3px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            color: white;
+            box-shadow: 0px 0px 10px rgb(198, 190, 237) inset;
+            padding: 5px;
+        }
+        nav {
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+            background-color: white;
+            opacity: 0.9;
+            padding: 10px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: black;
+            padding-right: 10px;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 50px; /* Adjust the width of your logo as needed */
+            height: auto; /* To maintain the aspect ratio */
+        }
+
+        .scroll-link {
+            cursor: pointer;
+            color: #eef2f7;
+            font-size: 1.3rem;
+            text-decoration: none;
+            font-weight: bold;
+            border: white solid 3px;
+            padding: 7px;
+            border-radius: 25px;
+            box-shadow: 0px 0px 10px white inset;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="/static/aroma.png" alt="Logo" class="logo">
+        </div>
+        <div>
+            <a href="/">Home</a>
+            <a href="https://github.com/Cryptonyts" target="_blank">Contact</a>
+        </div>
+    </nav>
+    <div class="hero-image">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            
+            <p class="scroll-link" onclick="scrollToBottom()"> scroll </p>
+        </div>
+    </div>
+
+    <div class="parallax-layer parallax-layer-1">
+        <div class="parallax-text">
+            <div class="phead"><h2>you're 'JOY'ful if you can relate with 2 or more :  </h2></div><br> <br><br>
+            <div class="points">
+                <p>1. You live your life with integrity <br> 2. You’ve embraced living in the moment <br> 3. You express gratitude regularly 
+                    <br> 4. You enjoy the simple things <br> 5. You don’t take life too seriously</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>About Aromatherapy</h2>
+        <p>Aromatherapy is a holistic healing treatment that utilizes natural plant extracts, known as essential oils, to promote physical, mental, and emotional well-being.</p>
+    </div>
+
+    <div class="parallax-layer parallax-layer-2">
+        <div class="parallax-text">
+            <div class="phead"><h2>you're 'SAD' if you can relate with<br> 2 or more :</h2></div> <br><br><br>
+            <div class="points">
+                <p>1. Feelings of helplessness and hopelessness.<br>
+                    2. Self loathing <br>
+                    3. Lack of interest in daily activities. <br>
+                    4. change in appetite / sleep pattern. <br>
+                    5. Concentration problems.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>INHALE NATURALLY SOURCED ESSENTIAL OILS</h2>
+        <p> <i>(exhale your worries out)</i></p>
+    </div>
+
+    <div class="parallax-layer parallax-layer-3">
+        <div class="parallax-text">
+            <div class="phead"><h2>you're 'FEAR'ful if you can relate with 2 or more : </h2></div> <br><br><br>
+            <div class="points">
+                <p>1. Increased heart rate <br>
+                    2. Faster breathing or shortness of breath <br>
+                    3. Butterflies or digestive changes <br>
+                    4.Sweating and chills <br>
+                    5. Trembling muscles</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Calmness 'SCENT' to you by team CRYPTONYTS </h2>
+        <p>Discover high-quality essential oils for aromatherapy and holistic well-being</p>
+    </div>
+
+    <div class="parallax-layer parallax-layer-4">
+        <div class="parallax-text">
+            <div class="phead"><h2>you're feeling 'DISGUIST'ed if you can relate with 2 or more :</h2></div> <br> <br> <br>
+            <div class="points">
+                <p>1. Nausea or queasiness <br>
+                    2. Attempts to remove oneself from the situation <br> 
+                    3. Intrusive thoughts about the disgusting stimulus <br>
+                    4. Associative memories with previous negative experiences or encounters <br>
+                    5. Social withdrawal or avoidance of others </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>a 'TREAT'ment your heart funtively crave! </h2>
+        <p> essential oil serve various purposes, including relaxation, skincare, and home cleaning.</p>
+    </div>
+
+    <div class="parallax-layer parallax-layer-5">
+        <div class="parallax-text">
+            <div class="phead"><h2>you're feeling 'ANGRY' if you can relate with 2 or more : </h2></div> <br><br><br>
+            <div class="points">
+                <p>1. Increased Heart Rate and Blood Pressure. <br>2. Muscle Tension <br>3. Verbal Outbursts <br>4. Feelings of Frustration or Irritability <br>5. Difficulty Concentrating or Focusing </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Aromatherapy Workshops</h2>
+        <p>aromatherapy workshops can help you to learn about the benefits and uses of essential oils for health and wellness.</p>
+    </div>
+
+    <div class="parallax-layer parallax-layer-6">
+        <div class="parallax-text" > 
+            <h1>Choose the emotions based <br>on symptoms </h1>
+        </div>
+    <div class="form">
+        <form action="{{ url_for('second_page') }}" method="post" id="emotionForm">
+            <label for="option1"><input type="radio" name="options" value="Happy" onchange="checkRadio()"> Joy</label><br>
+            <label for="option2"><input type="radio" name="options" value="Sadness" onchange="checkRadio()"> Sadness</label><br>
+            <label for="option3"><input type="radio" name="options" value="Fear" onchange="checkRadio()"> Fear</label><br>
+            <label for="option4"><input type="radio" name="options" value="Anger" onchange="checkRadio()"> Anger</label><br>
+            <label for="option5"><input type="radio" name="options" value="Disgust" onchange="checkRadio()"> Disgust</label><br><br>
+            <button type="submit" id="submitButton" disabled>Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <div class="container">
+        <h2>IDEATION, DESIGNED AND CRAFTED BY-</h2>
+        <p>Kushagra Singh <a href="https://github.com/kushagra-singhh" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a> &nbsp  
+            Joysa Kaushik <a href="https://github.com/aapJoysakoi" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a> &nbsp 
+            Nishita Singh <a href="https://github.com/Nishita10" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a>   &nbsp 
+            Satyam Kumar Prasad <a href="https://github.com/Saty70" target="_blank"><i class="fa-brands fa-github" style="color: #63E6BE;"></i></a></p>
+    </div>
+</body>
+
+<script>
+    function scrollToBottom() {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+    function checkRadio() {
+            var radioButtons = document.getElementsByName("options");
+            var submitButton = document.getElementById("submitButton");
+
+            for (var i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    submitButton.disabled = false;
+                    return;
+                }
+            }
+
+            submitButton.disabled = true;
+        }
+</script>
+
+</html>
