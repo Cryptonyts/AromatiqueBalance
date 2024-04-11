@@ -82,13 +82,7 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 ## Team
 
 -   Team Name: Cryptonyts
--   Team Leader Namer: Kushagra Singh
--   Email Id: contact@kushagrasingh.co
 
 | <img src="https://avatars.githubusercontent.com/u/88451512?v=4" width="100" height="100"> | <img src="https://avatars.githubusercontent.com/u/100141945?v=4" width="100" height="100"> | <img src="https://avatars.githubusercontent.com/u/114143879?v=4" width="100" height="100"> | <img src="https://avatars.githubusercontent.com/u/114142334?v=4" width="100" height="100"> |
 | :---------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
 |                      [Kushagra](https://github.com/kushagra-singhh)                       |                            [Satyam](https://github.com/Saty70)                             |                          [Joysa](https://github.com/aapJoysakoi)                           |                          [Nishita](https://github.com/Nishita10)                           |
-
-## Contact
-
-For any questions or inquiries, please contact [contact@kushagrasingh.co](mailto:contact@kushagrasingh.co).
